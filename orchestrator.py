@@ -1,5 +1,5 @@
 from typing import List
-from pydub import AudioSegment
+#from pydub import AudioSegment
 from elevenlabs import play
 from config import AgentConfig, VoiceConfig
 from agent_processor import AgentProcessor
@@ -28,11 +28,11 @@ class Orchestrator:
         # Play the generated podcast
         #self._play_podcast(output_filename)
     
-    @staticmethod
-    def _play_podcast(filename: str) -> None:
-        """Play the generated podcast"""
-        try:
-            audio = AudioSegment.from_mp3(filename)
-            play(audio.export(format="mp3"))
-        except Exception as e:
-            print(f"Error playing podcast: {e}")
+    #@staticmethod
+    #def _play_podcast(filename: str) -> None:
+    #    """Play the generated podcast"""
+    #    try:
+    #        audio = AudioSegment.from_mp3(filename)
+    #        play(audio.export(format="mp3"))
+    #    except Exception as e:
+    #        print(f"Error playing podcast: {e}")
